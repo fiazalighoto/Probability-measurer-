@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Guess with Fiaz — visualize probability through fun simulations of coins, dice, and cards!" />
+  <meta name="keywords" content="Probability, Simulation, Math, Coin Toss, Dice Roll, Cards, Guess with Fiaz" />
+  <meta name="author" content="Fiaz" />
+  <title>Guess with Fiaz</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/9790/9790474.png" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- Loading Screen -->
+  <div id="loader">
+    <div class="spinner"></div>
+    <h2>Loading Math Magic...</h2>
+  </div>
+
+  <!-- Background with floating symbols -->
+  <div class="background">
+    <div class="symbols">
+      <span>π</span><span>Σ</span><span>√</span><span>∫</span><span>∞</span>
+      <span>θ</span><span>λ</span><span>∆</span><span>µ</span><span>φ</span>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">✨ Guess with Fiaz</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero">
+    <h1 class="glow-title">Guess with Fiaz</h1>
+    <p class="tagline">Visualize Probability Like Never Before!</p>
+  </header>
+
+  <!-- Main Sections -->
+  <main class="sections">
+    <div class="section-box" onclick="openSimulation('coin.html')">
+      <img src="https://cdn-icons-png.flaticon.com/512/1783/1783675.png" alt="Coin Toss" />
+      <h2>Coin Toss</h2>
+    </div>
+
+    <div class="section-box" onclick="openSimulation('dice.html')">
+      <img src="https://cdn-icons-png.flaticon.com/512/743/743922.png" alt="Dice Roll" />
+      <h2>Dice Roll</h2>
+    </div>
+
+    <div class="section-box" onclick="openSimulation('cards.html')">
+      <img src="https://cdn-icons-png.flaticon.com/512/3425/3425923.png" alt="Card Probability" />
+      <h2>Cards Probability</h2>
+    </div>
+  </main>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About This Project</h2>
+    <p>
+      “Guess with Fiaz” brings probability to life with real-time simulations of coins, dice, and cards.  
+      It helps learners visualize randomness, outcomes, and chances in a fun and interactive way.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm" onsubmit="return false;">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" title="Go to top">↑</button>
+
+  <!-- Footer -->
+  <footer>
+    <div class="socials">
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" alt="Facebook" /></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384017.png" alt="Instagram" /></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384012.png" alt="Twitter" /></a>
+    </div>
+    <p>© 2025 Guess with Fiaz | Built with ❤️ by Fiaz</p>
+  </footer>
+</body>
+</html>
