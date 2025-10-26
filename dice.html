@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dice Roll | Guess with Fiaz</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="dice.js" defer></script>
+</head>
+<body>
+  <div class="dice-page">
+    <h1 class="glow-title">Dice Roll Simulation</h1>
+    <p class="tagline">Visualize probability of sums with dice</p>
+
+    <div class="dice-inputs">
+      <label>Number of Dice:</label>
+      <input type="number" id="numDice" min="1" max="10" value="2" />
+
+      <label>Number of Rolls:</label>
+      <input type="number" id="numRolls" min="1" max="100" value="10" />
+
+      <label>Condition:</label>
+      <select id="condition">
+        <option value="exactly">Exactly</option>
+        <option value="atleast">At least</option>
+        <option value="atmost">At most</option>
+      </select>
+
+      <label>Desired Sum:</label>
+      <input type="number" id="desiredSum" min="1" value="7" />
+
+      <button id="simulateBtn">Roll Dice</button>
+    </div>
+
+    <div class="dice-display">
+      <div id="diceArea"></div>
+      <p id="resultText"></p>
+    </div>
+
+    <div class="back-home">
+      <a href="index.html">← Back to Home</a>
+    </div>
+  </div>
+</body>
+</html>
